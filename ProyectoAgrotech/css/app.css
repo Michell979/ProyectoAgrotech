@@ -1,0 +1,137 @@
+
+:root{
+    --bs-blue: #206892;
+    --bs-green:#87b10b;
+}
+html{
+    font-size: 62.5%;
+}
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+h1,h2,h3{
+    font-family: 'Playfair Display', serif;
+}
+h1{
+    font-size: 4.8rem;
+}
+@media (min-width: 768px) {
+    h1{
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 768px){
+    .hero{
+        height: 55rem;
+    }
+}
+h2{
+    font-size: 3.2em;
+}
+@media (min-width: 768px){
+    h2{
+        font-size: 4rem;
+    }
+
+}
+
+h3{
+    font-size: 2.4em;
+}
+@media (min-width: 768px){
+    h2{
+        font-size: 3rem;
+    }
+
+}
+
+/* reescribir colores */
+.text-primary ,.nombre-sitio{
+    color: var(--bs-blue)!important;
+}
+.btn-success{
+    background-color: var(--bs-green)!important;
+}
+.bg-primary, .btn-primary{
+    background-color: var(--bs-blue)!important;
+}
+
+.hero{
+    background-image: url(../img/reflejo.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+
+     }
+     /* @media (min-width: 768px) {  
+            .header-lavanda{
+
+                display: none;
+                display: block;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                 animation: move 1s 0s ease-in-out;
+                 
+              }
+            }
+/* 
+    /* //ANIMACION */
+         /* @keyframes move{
+            0%{
+                opacity: 0;
+                transform: translateX(-10rem);
+            }
+            50%{
+                opacity: 0;
+            }
+
+            100%{
+                opacity: 1;
+                transform: translateX(0);
+            }
+           
+         } 
+
+             */ 
+ .huerto{
+    
+    background-image:url(../img/creahuerto.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }     
+    
+
+
+
+
+
+
+@media( min-width: 768px){
+    .producto img{
+        height: 43rem;
+        width: 100%;
+        object-fit: cover;
+
+    }
+}
+.categoria img{
+    transition-property: transform;
+    transition-duration: .3s;
+}
+.categoria img:hover{
+    transform: scale(1.2);
+}
+.galeria li:not(:last-of-type){
+    margin-bottom: 1rem;
+}
+.form-control{
+    padding: 1rem;
+    font-size: 1.6rem;
+}
